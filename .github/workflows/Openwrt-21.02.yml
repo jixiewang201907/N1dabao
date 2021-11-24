@@ -18,12 +18,14 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - flippy_name: 67+
-            release_name: openwrt_s905d_n1_k5.14-67+.img
-          - flippy_name: 67+o
-            release_name: openwrt_s905d_n1_k5.4-67+o.img
-          - flippy_name: 67+plus
-            release_name: openwrt_s905d_n1_k5.15-67+plus.img
+          - flippy_name: k5.4
+            release_name: openwrt_s905d_n1_k5.4.img
+          - flippy_name: k5.10
+            release_name: openwrt_s905d_n1_k5.10.img
+          - flippy_name: k5.14
+            release_name: openwrt_s905d_n1_k5.14.img
+          - flippy_name: k5.15
+            release_name: openwrt_s905d_n1_k5.15.img
     
     env:
       FLIPPY_NAME: ${{ matrix.flippy_name }}   
@@ -44,6 +46,7 @@ jobs:
         cp -r ${FLIPPY_NAME}/opt/* /opt
         cd /opt
         git clone https://github.com/unifreq/openwrt_packit        
+        git clone https://github.com/ophub/kernel
         cd -
         cp /opt/whoami /opt/openwrt_packit
     
@@ -71,8 +74,10 @@ jobs:
     - name: build img
       run: |
         sudo chmod  -R 777 /opt
+        mkdir  /opt/openwrt_packit/tmp
+        sudo mount -t tmpfs  none  /opt/openwrt_packit/tmp
         cd /opt/openwrt_packit
-        sudo chmod +x mk_s905d_n1.sh
+        #sudo chmod +x *.sh
         sudo ./mk_s905d_n1.sh
         
     - name: copy update files
@@ -85,8 +90,8 @@ jobs:
       run: |
         sudo chmod -R 777 /opt/openwrt_packit/output
         cd /opt/openwrt_packit/output
-        sudo pigz -9 -p 2 -k *
-        rm -rf openwrt-update-amlogic.gz openwrt_s905d_n1_R21.11.11_k5.14.18-flippy-67+.img openwrt_s905d_n1_R21.11.11_k5.15.2-flippy-67+.img openwrt_s905d_n1_R21.11.11_k5.4.159-flippy-67+o.img
+        sudo pigz -9 -p 2 *
+        #sudo pigz -9 -p 2 -k *(-k保留原文件)
         echo "::set-output name=status::success"
     
     - name: Check Files4
