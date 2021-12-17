@@ -52,7 +52,7 @@ jobs:
       run: |
         cd /opt/openwrt_packit
         
-        wget  https://github.com/0118Add/Actions-CeShi/releases/download/$version/openwrt-armvirt-64-default-rootfs.tar.gz
+        wget  https://github.com/0118Add/Actions-Shangyou/releases/download/ARMv8_Lede/openwrt-armvirt-64-default-rootfs.tar.gz
                 
     - name: Check Files
       run: |
