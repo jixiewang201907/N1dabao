@@ -1,4 +1,4 @@
-name: Build N1 68+o and 68+
+name: Build N1 69+o and 69+
 
 on:
   repository_dispatch:
