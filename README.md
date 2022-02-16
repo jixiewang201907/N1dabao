@@ -1,4 +1,4 @@
-# 此项目基于flippy的69+o和69+打包N1的openwrt
+# 此项目基于flippy的70+o和70+打包N1的openwrt
 
 # 快照功能
 ![Alt text](https://github.com/0118Add/N1dabao/blob/main/img/kuazhao.jpg)
