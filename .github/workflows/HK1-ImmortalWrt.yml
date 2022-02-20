@@ -1,4 +1,4 @@
-name: Build ImmortalWrt-HK1 70+o and 70+
+name: Build HK1-ImmortalWrt 70+o and 70+
 
 on:
   repository_dispatch:
