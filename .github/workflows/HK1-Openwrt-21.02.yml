@@ -1,4 +1,4 @@
-name: Build 21.02 70+o and 70+
+name: Build HK1-21.02 70+o and 70+
 
 on:
   repository_dispatch:
@@ -19,13 +19,13 @@ jobs:
       matrix:
         include:
           - flippy_name: k5.4
-            release_name: openwrt_s905d_n1_k5.4.img
+            release_name: openwrt_s905x3_multi_k5.4.img
           - flippy_name: k5.10
-            release_name: openwrt_s905d_n1_k5.10.img
+            release_name: openwrt_s905x3_multi_k5.10.img
           - flippy_name: k5.15
-            release_name: openwrt_s905d_n1_k5.15.img
+            release_name: openwrt_s905x3_multi_k5.15.img
           - flippy_name: k5.16
-            release_name: openwrt_s905d_n1_k5.16.img
+            release_name: openwrt_s905x3_multi_k5.16.img
    
     env:
       FLIPPY_NAME: ${{ matrix.flippy_name }}   
@@ -78,7 +78,7 @@ jobs:
         sudo mount -t tmpfs  none  /opt/openwrt_packit/tmp
         cd /opt/openwrt_packit
         #sudo chmod +x *.sh
-        sudo ./mk_s905d_n1.sh
+        sudo ./mk_s905x3_multi.sh
         
     - name: copy update files
       run: |
