@@ -1,4 +1,4 @@
-name: Build HK1-ImmortalWrt 70+o and 70+
+name: Build x96max-ImmortalWrt 70+o and 70+
 
 on:
   repository_dispatch:
@@ -19,13 +19,13 @@ jobs:
       matrix:
         include:
           - flippy_name: k5.4
-            release_name: openwrt_s905x3_multi_k5.4.img
+            release_name: openwrt_s905x2_x96max_k5.4.img
           - flippy_name: k5.10
-            release_name: openwrt_s905x3_multi_k5.10.img
+            release_name: openwrt_s905x2_x96max_k5.10.img
           - flippy_name: k5.15
-            release_name: openwrt_s905x3_multi_k5.15.img    
+            release_name: openwrt_s905x2_x96max_k5.15.img    
           - flippy_name: k5.16
-            release_name: openwrt_s905x3_multi_k5.16.img
+            release_name: openwrt_s905x2_x96max_k5.16.img
 
     env:
       FLIPPY_NAME: ${{ matrix.flippy_name }}   
@@ -78,7 +78,7 @@ jobs:
         sudo mount -t tmpfs  none  /opt/openwrt_packit/tmp
         cd /opt/openwrt_packit
         #sudo chmod +x *.sh
-        sudo ./mk_s905x3_multi.sh
+        sudo ./mk_s905x2_x96max.sh
         
     - name: copy update files
       run: |
@@ -107,13 +107,13 @@ jobs:
       id: release
       uses: ncipollo/release-action@v1
       with:
-        name: ${{ env.DATE }} 🚀 N1 HK1-Openwrt-img | 打包
+        name: ${{ env.DATE }} 🚀 N1 HK1 x96max-Openwrt-img | 打包
         allowUpdates: true
         tag: ${{ env.version }}
         commit: main
         token: ${{ secrets.RELEASES_TOKEN }}
         body: |
-          ## 以下为N1 HK1-ImmortalWrt源码最新固件（每日上午7时自动编译打包最新固件）
+          ## 以下为x96max-ImmortalWrt源码最新固件（每日上午7时自动编译打包最新固件）
           默认IP：192.168.1.10 默认密码： password
            
  
