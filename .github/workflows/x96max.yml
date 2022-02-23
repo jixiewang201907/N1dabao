@@ -1,4 +1,4 @@
-name: Build x96max 70+o and 70+
+name: Build x96max-Lean 70+o and 70+
 
 on:
   repository_dispatch:
