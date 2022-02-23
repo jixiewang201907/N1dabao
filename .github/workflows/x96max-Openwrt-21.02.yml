@@ -113,7 +113,7 @@ jobs:
         commit: main
         token: ${{ secrets.RELEASES_TOKEN }}
         body: |
-          ## 以下为x96max官方master分支最新固件（每日上午7时自动编译打包最新固件）
+          ## 以下为N1 HK1 x96max官方master分支最新固件（每日上午7时自动编译打包最新固件）
           默认IP：192.168.1.10 默认密码： password
            
  
