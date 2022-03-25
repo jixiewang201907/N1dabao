@@ -1,4 +1,4 @@
-name: Build x96max-ImmortalWrt 70+o and 70+
+name: Build x96max-ImmortalWrt
 
 on:
   repository_dispatch:
