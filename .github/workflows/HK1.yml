@@ -1,4 +1,4 @@
-name: Build HK1
+name: Build HK1-Lean
 
 on:
   repository_dispatch:
