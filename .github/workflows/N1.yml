@@ -1,4 +1,4 @@
-name: Build N1-Lean 70+o and 70+
+name: Build N1-Lean
 
 on:
   repository_dispatch:
