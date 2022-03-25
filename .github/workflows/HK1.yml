@@ -1,4 +1,4 @@
-name: Build HK1 70+o and 70+
+name: Build HK1
 
 on:
   repository_dispatch:
