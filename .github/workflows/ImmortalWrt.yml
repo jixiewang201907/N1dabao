@@ -1,4 +1,4 @@
-name: Build N1-ImmortalWrt 70+o and 70+
+name: Build N1-ImmortalWrt
 
 on:
   repository_dispatch:
