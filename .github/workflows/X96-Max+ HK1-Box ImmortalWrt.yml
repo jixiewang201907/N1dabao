@@ -1,4 +1,4 @@
-name: Build HK1-ImmortalWrt
+name: Build X96-Max+ HK1-Box ImmortalWrt
 
 on:
   repository_dispatch:
