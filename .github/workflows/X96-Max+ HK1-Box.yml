@@ -1,4 +1,4 @@
-name: Build HK1-Lean
+name: Build X96-Max+ HK1-Box Lean
 
 on:
   repository_dispatch:
