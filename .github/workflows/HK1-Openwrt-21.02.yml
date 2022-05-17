@@ -1,4 +1,4 @@
-name: Build HK1-21.02
+name: Build X96-Max+ HK1-Box 21.02
 
 on:
   repository_dispatch:
@@ -45,7 +45,7 @@ jobs:
         sudo chmod  -R 777 /opt
         cp -r ${FLIPPY_NAME}/opt/* /opt
         cd /opt
-        git clone https://github.com/unifreq/openwrt_packit        
+        git clone https://github.com/0118Add/openwrt_packit        
         git clone https://github.com/ophub/kernel
         cd -
         cp /opt/whoami /opt/openwrt_packit
