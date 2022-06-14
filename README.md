@@ -1,4 +1,4 @@
-# 此项目基于flippy的70+o和70+打包N1 HK1 x96max的openwrt
+# 此项目基于flippy的73+o和73+打包N1 HK1 x96max的openwrt
 
 # 快照功能
 ![Alt text](https://github.com/0118Add/N1dabao/blob/main/img/kuazhao.jpg)
@@ -6,14 +6,14 @@
 使用方法：固件新刷入或采用新版的 update-xxx-openwrt.sh 脚本升级之后就具备了快照功能，工具包名称：由于取名困难，故采用了 flippy 为命令名称（/usr/sbin/flippy)，在ssh或ttyd下输入即可，全程中文菜单，全交互式操作。
 
 # 默认IP及密码
-默认IP 192.168.1.10  密码 password
+默认IP 192.168.2.10  密码 password
 
 # N1全新安装
  下载对应版本固件
  
  将固件写入U盘或TF卡 推荐写盘软件 rufu或者balenaEtcher任选其一
  
- 插入U盘启动盒子，输入192.168.1.10进入后台
+ 插入U盘启动盒子，输入192.168.2.10进入后台
  
  在系统——TTYD终端——输入用户名root；密码password
  
