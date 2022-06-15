@@ -1,5 +1,6 @@
 WHOAMI="BGG"
-BUILD=$(date '+%Y-%m-%d %H:%M:%S')
+OPENWRT_VER="R22.5.5"
+BUILD=$(date '+%Y-%m-%d')
 DISTRIB_REVISION="${OPENWRT_VER} (${BUILD} by ${WHOAMI})"
 DISTRIB_DESCRIPTION=""
 KERNEL="5.17.14"
