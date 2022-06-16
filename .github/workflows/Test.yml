@@ -1,4 +1,4 @@
-name: Build N1-Lean
+name: Test N1
 
 on:
   repository_dispatch:
@@ -18,16 +18,11 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          #- flippy_name: k5.4
-            #release_name: openwrt_s905d_n1_k5.4.img
-          #- flippy_name: k5.10
-            #release_name: openwrt_s905d_n1_k5.10.img
-          - flippy_name: k5.15
-            release_name: openwrt_s905d_n1_k5.15.img
-          - flippy_name: k5.17
-            release_name: openwrt_s905d_n1_k5.17.img    
-          - flippy_name: k5.18
-            release_name: openwrt_s905d_n1_k5.18.img    
+          - flippy_name: k5.4
+            release_name: openwrt_s905d_n1_k5.4.img
+          - flippy_name: k5.10
+            release_name: openwrt_s905d_n1_k5.10.img
+    
     
     env:
       FLIPPY_NAME: ${{ matrix.flippy_name }}   
@@ -48,7 +43,7 @@ jobs:
         cp -r ${FLIPPY_NAME}/opt/* /opt
         cd /opt
         git clone https://github.com/unifreq/openwrt_packit        
-        git clone https://github.com/ophub/kernel
+        git clone https://github.com/breakings/OpenWrt
         cd -
         cp /opt/whoami /opt/openwrt_packit
     
