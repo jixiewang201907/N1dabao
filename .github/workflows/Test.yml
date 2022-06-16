@@ -75,7 +75,7 @@ jobs:
         sudo mount -t tmpfs  none  /opt/openwrt_packit/tmp
         cd /opt/openwrt_packit
         #sudo chmod +x *.sh
-        sudo ./mk_s905d_n1.sh
+        sudo ./mk_s905x3_multi.sh
         
     - name: copy update files
       run: |
