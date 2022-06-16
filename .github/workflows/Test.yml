@@ -1,4 +1,4 @@
-name: Test N1
+name: Test s905x3
 
 on:
   repository_dispatch:
@@ -19,9 +19,9 @@ jobs:
       matrix:
         include:
           - flippy_name: k5.4
-            release_name: openwrt_s905d_n1_k5.4.img
+            release_name: openwrt_s905x3_multi_k5.4.img
           - flippy_name: k5.10
-            release_name: openwrt_s905d_n1_k5.10.img
+            release_name: openwrt_s905x3_multi_k5.10.img
     
     
     env:
