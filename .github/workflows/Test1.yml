@@ -1,4 +1,4 @@
-name: Test N1
+name: Test n1
 
 on:
   repository_dispatch:
