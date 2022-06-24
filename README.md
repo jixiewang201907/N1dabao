@@ -1,4 +1,4 @@
-# 此项目基于flippy的73+o和73+打包N1 HK1 x96max的openwrt
+# 此项目基于flippy的74+o和74+打包N1 HK1 x96max的openwrt
 
 # 快照功能
 ![Alt text](https://github.com/0118Add/N1dabao/blob/main/img/kuazhao.jpg)
