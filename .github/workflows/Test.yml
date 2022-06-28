@@ -1,4 +1,4 @@
-name: Test s905x3
+name: Test lean s905x3
 
 on:
   repository_dispatch:
