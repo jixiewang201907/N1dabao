@@ -1,4 +1,4 @@
-name: Build N1-Lean
+name: Build R68s
 
 on:
   repository_dispatch:
@@ -18,12 +18,7 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - flippy_name: k5.4
-            release_name: openwrt_s905d_n1_k5.4.img
-          - flippy_name: k5.10
-            release_name: openwrt_s905d_n1_k5.10.img
-          - flippy_name: k5.15
-            release_name: openwrt_s905d_n1_k5.15.img
+ 
           - flippy_name: k5.18
             release_name: openwrt_s905d_n1_k5.18.img    
     
@@ -79,7 +74,7 @@ jobs:
         sudo mount -t tmpfs  none  /opt/openwrt_packit/tmp
         cd /opt/openwrt_packit
         #sudo chmod +x *.sh
-        sudo ./mk_s905d_n1.sh
+        sudo ./mk_rk3568_r68s.sh
         
     - name: copy update files
       run: |
