@@ -20,7 +20,7 @@ jobs:
         include:
  
           - flippy_name: k5.18
-            release_name: openwrt_s905d_n1_k5.18.img    
+            release_name: openwrt_rk3568_r68s_k5.18.img    
     
     env:
       FLIPPY_NAME: ${{ matrix.flippy_name }}   
