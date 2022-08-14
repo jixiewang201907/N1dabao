@@ -24,8 +24,8 @@ jobs:
             release_name: openwrt_s905x3_multi_k5.10.img
           - flippy_name: k5.15
             release_name: openwrt_s905x3_multi_k5.15.img
-          - flippy_name: k5.18
-            release_name: openwrt_s905x3_multi_k5.18.img    
+          #- flippy_name: k5.18
+            #release_name: openwrt_s905x3_multi_k5.18.img    
           - flippy_name: k5.19
             release_name: openwrt_s905x3_multi_k5.19.img    
     
