@@ -47,8 +47,8 @@ jobs:
         sudo chmod  -R 777 /opt
         cp -r ${FLIPPY_NAME}/opt/* /opt
         cd /opt
-        #git clone https://github.com/unifreq/openwrt_packit        
-        git clone https://github.com/0118Add/openwrt_packit
+        git clone https://github.com/unifreq/openwrt_packit        
+        #git clone https://github.com/0118Add/openwrt_packit
         #git clone https://github.com/ophub/kernel
         git clone https://github.com/breakings/OpenWrt
         
