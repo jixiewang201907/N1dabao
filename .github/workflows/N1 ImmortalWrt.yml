@@ -24,10 +24,8 @@ jobs:
             release_name: openwrt_s905d_n1_k5.10.img
           - flippy_name: k5.15
             release_name: openwrt_s905d_n1_k5.15.img    
-          #- flippy_name: k5.18
-            #release_name: openwrt_s905d_n1_k5.18.img
-          - flippy_name: k5.19
-            release_name: openwrt_s905d_n1_k5.19.img    
+          - flippy_name: k6.x
+            release_name: openwrt_s905d_n1_k6.x.img    
     
     env:
       FLIPPY_NAME: ${{ matrix.flippy_name }}   
