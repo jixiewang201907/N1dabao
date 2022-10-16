@@ -24,10 +24,8 @@ jobs:
             release_name: openwrt_s905x3_multi_k5.10.img
           - flippy_name: k5.15
             release_name: openwrt_s905x3_multi_k5.15.img
-          #- flippy_name: k5.18
-            #release_name: openwrt_s905x3_multi_k5.18.img    
-          - flippy_name: k5.19
-            release_name: openwrt_s905x3_multi_k5.19.img    
+          - flippy_name: k6.x
+            release_name: openwrt_s905x3_multi_k6.x.img    
     
     env:
       FLIPPY_NAME: ${{ matrix.flippy_name }}   
@@ -49,8 +47,8 @@ jobs:
         cd /opt
         #git clone https://github.com/unifreq/openwrt_packit        
         git clone https://github.com/0118Add/openwrt_packit
-        #git clone https://github.com/ophub/kernel
-        git clone https://github.com/breakings/OpenWrt
+        git clone https://github.com/ophub/kernel
+        #git clone https://github.com/breakings/OpenWrt
         
         cd -
         cp /opt/whoami /opt/openwrt_packit
