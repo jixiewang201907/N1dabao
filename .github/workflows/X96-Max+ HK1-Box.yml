@@ -6,7 +6,7 @@ on:
   #schedule:
     #- cron: 0 23 * * *      
 env:
-  UPLOAD_FIRMWARE: true
+  UPLOAD_FIRMWARE: false
   RELEASE: true
   TZ: Asia/Shanghai
 
