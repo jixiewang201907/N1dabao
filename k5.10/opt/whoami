@@ -1,6 +1,5 @@
 WHOAMI="BGG"
-KERNEL="5.10.148"
-VERSION="78+"
-KERNEL_VERSION="$KERNEL-flippy-$VERSION"
-KERNEL_PKG_HOME="/opt/OpenWrt/opt/kernel/$KERNEL"
-#KERNEL_PKG_HOME="/opt/kernel/pub/stable/$KERNEL"
+K=$(find /opt/kernel/5.15.* -name "boot*.tar.gz" | awk -F '[-]' 'END{print $2}')
+KERNEL_PKG_HOME="/opt/kernel/$K"
+V=$(find /opt/kernel/5.15.* -name "boot*.tar.gz" | awk -F '[-.]' 'END{print $8}')
+KERNEL_VERSION="$K-flippy-$V"
