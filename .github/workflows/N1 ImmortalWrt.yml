@@ -118,7 +118,7 @@ jobs:
         token: ${{ secrets.GITHUB_TOKEN }}
         body: |
           ## 以下为N1-ImmortalWrt源码最新固件（有更新自动编译打包最新固件）
-          默认IP：192.168.2.1 默认密码： password
+          默认IP：192.168.2.10 默认密码： password
            
         artifacts: ${{ env.FIRMWARE }}/*
 
