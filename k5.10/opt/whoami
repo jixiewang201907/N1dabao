@@ -1,4 +1,5 @@
 WHOAMI="BGG"
+# K=$(ls /opt/kernel/ | grep -v '5.*' )
 K=$(find /opt/kernel/5.10.* -name "boot*.tar.gz" | awk -F '[-]' 'END{print $2}')
 KERNEL_PKG_HOME="/opt/kernel/$K"
 V=$(find /opt/kernel/5.10.* -name "boot*.tar.gz" | awk -F '[-.]' 'END{print $8}')
