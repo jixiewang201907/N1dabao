@@ -32,13 +32,15 @@ jobs:
     - name: Initialization environment
       run: |     
         echo "DATE=$(date "+%Y-%m-%d %H:%M:%S")"  >> $GITHUB_ENV
-        sudo chmod  -R 777 /opt
+        echo $PWD
+        sudo mkdir /opt/kernel
         cp -r ${FLIPPY_NAME}/opt/* /opt
         cd /opt
-        git clone https://github.com/breakings/OpenWrt kernel
+        ls
+        svn co https://github.com/breakings/OpenWrt/trunk/opt/kernel kernel
         #git clone https://github.com/unifreq/openwrt_packit
         git clone https://github.com/0118Add/openwrt_packit
-        cd -
+        cd ..
         cp /opt/whoami /opt/openwrt_packit
                 
     - name: Download
