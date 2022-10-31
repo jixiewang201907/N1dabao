@@ -1,6 +1,0 @@
-WHOAMI="BGG"
-# K=$(ls /opt/kernel/ | grep '5.10.*')
-K=$(find /opt/kernel/5.10.* -name "boot*.tar.gz" | awk -F '[-]' 'END{print $2}')
-KERNEL_PKG_HOME="/opt/kernel/$K"
-V=$(find /opt/kernel/5.10.* -name "boot*.tar.gz" | awk -F '[-.]' 'END{print $8}')
-KERNEL_VERSION="$K-flippy-$V"
