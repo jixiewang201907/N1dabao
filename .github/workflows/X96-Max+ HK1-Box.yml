@@ -9,6 +9,7 @@ env:
   UPLOAD_COWTRANSFER: false
   RELEASE: true
   TZ: Asia/Shanghai
+  FILE_NAME: openwrt_s905x3-lean&flippy
 
 jobs:
   build:
@@ -112,7 +113,7 @@ jobs:
       with:
         name: ${{ env.DATE }} 🚀 N1 HK1 x96max-Openwrt-img | 打包
         allowUpdates: true
-        tag: ${{ env.version }}
+        tag: ${{ env.FILE_NAME }}
         commit: main
         token: ${{ secrets.RELEASES_TOKEN }}
         body: |
