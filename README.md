@@ -1,4 +1,4 @@
-# 此项目基于flippy的80+o和80+打包N1 HK1 x96max的openwrt
+# 此项目基于flippy的+o和+打包N1 HK1 x96max的openwrt
 
 # 默认IP及密码
 默认IP 192.168.2.10  密码 password
