@@ -115,9 +115,8 @@ jobs:
         commit: main
         token: ${{ secrets.GITHUB_TOKEN }}
         body: |
-          This is OpenWrt firmware for n1
-          * Firmware information
-          Default IP地址: 192.168.2.1
+          ## 以下为s905d-lean源码最新固件（有更新自动编译打包最新固件）
+          登陆IP地址: 192.168.2.1
           登陆用户名: root
           登陆密码  : password
            
